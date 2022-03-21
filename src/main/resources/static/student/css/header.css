@@ -1,0 +1,37 @@
+.header {
+    background-color: #343a40;
+    align-items: center;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.header .header-init {
+    align-items: center;
+}
+
+.header .header-init .header-text {
+    font-size: 17px;
+}
+
+.header .header-init .exam-class {
+    font-size: 15px;
+    color: #9a9da0;
+    padding-left: 30px;
+}
+
+.header .header-init .username {
+    text-align: end;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+.header .header-init .user-default {
+    align-items: center;
+}
+
+.header .header-init .user-default img {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+}

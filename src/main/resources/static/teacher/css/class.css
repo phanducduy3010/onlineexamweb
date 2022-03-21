@@ -1,0 +1,51 @@
+.main-content .page-header {
+    margin-bottom: 0rem;
+    padding-bottom: 20px;
+}
+
+.main-content .page-header .page-header-title .page-title h1 {
+    font-size: calc(0.9271875rem + 0.32625vw);
+    color: #212529;
+}
+
+.main-content .anchor-content .page-main-actions {
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 10px;
+}
+
+.main-content .anchor-content .page-main-actions .page-actions {
+    display: flex;
+    justify-content: end;
+}
+
+.main-content .anchor-content .page-main-actions .page-actions a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #eb5202;
+    padding: 10px;
+}
+
+.main-content .anchor-content .page-main-actions .page-actions a:hover {
+    background-color: #ba4000;
+    box-shadow: 0 0 0 1px #007bdb;
+}
+
+.main-content .page-content {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.main-content .page-content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .page-content ul li a {
+    text-decoration: none;
+    color: #0f6fc5;
+    font-size: 14pt;
+}
+
+.main-content .page-content ul li a:hover {
+    text-decoration: underline;
+}

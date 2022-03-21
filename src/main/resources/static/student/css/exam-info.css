@@ -1,0 +1,41 @@
+.content .nav-bar .dashboard .my-course-init {
+    margin-left: 15px;
+}
+
+.content .nav-bar .dashboard .my-course-init .subject {
+    margin-left: 21px;
+}
+
+.content .nav-bar .dashboard .my-course-init .subject .subject-exam {
+    margin-left: 27px;
+}
+
+.content .main-content .description {
+    margin-bottom: 30px;
+}
+
+.content .main-content .btn-action .btn-start {
+    background-color: #2196f3;
+    text-align: center;
+    color: aliceblue;
+    padding: 8px 20px;
+    font-weight: 700;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.content .main-content .btn-action {
+    text-align: center;
+}
+
+.content .main-content .btn-action .btn-start:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.exam-focus {
+    text-decoration: underline;
+    text-decoration-color: #2196f3;
+}

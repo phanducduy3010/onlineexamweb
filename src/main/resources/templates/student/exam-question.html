@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/student/css/common.css">
+    <link rel="stylesheet" href="/student/css/header.css">
+    <link rel="stylesheet" href="/student/css/nav-bar.css">
+    <link rel="stylesheet" href="/student/css/content.css">
+    <link rel="stylesheet" href="/student/css/exam-question.css">
+    <title>Exam</title>
+</head>
+
+<body>
+    <div class="header flex">
+        <div class="w-1/2 flex header-init">
+            <div class="header-text">EXAMINATION_HUST</div>
+            <div class="exam-class pointer">Lớp thi</div>
+        </div>
+        <div class="w-1/2 flex header-init">
+            <div class="w-4/5 username header-text" id="username"></div>
+            <div class="user-default flex">
+                <img src="/student/lib/image/default-avatar.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="content flex">
+            <div class="nav-bar w-1/5">
+                <div class="nav-title">List question</div>
+                <div class="questions" id="quesList">
+                    <!-- <div class="questions-row"> -->
+                    <!-- <button class="w-1/5 pointer" style="border: 2px solid #2196f3;">1</button>
+                    <button class="w-1/5 pointer" style="border: 2px solid #2196f3;">2</button>
+                    <button class="w-1/5 pointer">3</button>
+                    <button class="w-1/5 pointer">4</button>
+                    <button class="w-1/5 pointer">5</button>
+                    <button class="w-1/5 pointer">6</button>
+                    <button class="w-1/5 pointer">7</button>
+                    <button class="w-1/5 pointer">8</button>
+                    <button class="w-1/5 pointer">9</button>
+                    <button class="w-1/5 pointer">10</button> -->
+                    <!-- </div> -->
+                </div>
+                <div class="btn-page">
+                    <button class="pointer btn-finish mt-10" id="finishExam">Finish</button>
+                </div>
+                <div class="time-remaining" id="timeRemaining">
+                    <b id="hours"></b>
+                    <b id="minutes"></b>
+                    <b id="seconds"></b>
+                </div>
+            </div>
+            <div class="main-content w-4/5">
+                <div class="ques-init" id="quesShow">
+                    <!-- <div class="question flex">
+                         <div class="w-1/4 question-description">
+                            <div class="quesNum"></div>
+                            <div class="mt-10">Đặt cờ</div>
+                            <input type="checkbox" style="margin-top: 5x;">
+                            <img src="/student/lib/image/icon-flag.jpg" alt="" style="width:12px;">
+                        </div>
+                        <div class="w-3/4 question-init">
+                            <div class="question-hypothesis"></div>
+                            <div class="answers">
+                                <div class="answer"><input type="radio" name="question1" id="" value="1"> Answer 1</div>
+                                <div class="answer"><input type="radio" name="question1" id="" value="2"> Answer 4</div>
+                                <div class="answer"><input type="radio" name="question1" id="" value="3"> Answer 3</div>
+                                <div class="answer"><input type="radio" name="question1" id="" value="4"> Answer 2</div> 
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="question flex">
+                        <div class="w-1/4 question-description">
+                            <div class="quesNum"></div>
+                            <div class="mt-10">Đặt cờ</div>
+                            <input type="checkbox" style="margin-top: 5x;">
+                            <img src="/student/lib/image/icon-flag.jpg" alt="" style="width:12px;">
+                        </div>
+                        <div class="w-3/4 question-init">
+                            <div class="question-hypothesis"></div>
+                            <div class="answers">
+                                 <div class="answer"><input type="radio" name="question2" id="" value="1"> Answer 1</div>
+                                <div class="answer"><input type="radio" name="question2" id="" value="2"> Answer 4</div>
+                                <div class="answer"><input type="radio" name="question2" id="" value="3"> Answer 3</div>
+                                <div class="answer"><input type="radio" name="question2" id="" value="4"> Answer 2</div> 
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="btn-page flex">
+                    <button class="pointer" disabled id="prevPage">Previous Page</button>
+                    <button class="pointer" id="nextPage">Next Page</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.history.pushState(null, null, window.location.href);
+    window.addEventListener('popstate', function() {
+        history.pushState(null, null, document.URL);
+    });
+    window.onload = function() {
+        document.onkeydown = function(e) {
+            return ((e.which || e.keyCode) != 116);
+        };
+    }
+</script>
+<script src="/student/js/base.js"></script>
+<script src="/student/js/baseAPI.js"></script>
+<script src="/student/js/exam.js"></script>
+<script src="/student/js/exam-detail.js"></script>
+
+</html>
