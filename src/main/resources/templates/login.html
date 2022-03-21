@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/student/css/common.css">
+    <link rel="stylesheet" href="/student/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="background">
+        <!-- <div class="background-img"></div> -->
+        <img src="/student/lib/image/bkhn-cau-vong.jpg" class="background-img" alt="">
+    </div>
+    <div class="login flex">
+        <div class="login-background w-1/2">
+            <img src="/student/lib/image/background.jpg" alt="">
+        </div>
+        <div class="login-form w-1/2 flex">
+            <div class="form-init" autocomplete="off">
+                <div class="form-title flex">
+                    <img src="/student/lib/image/logo.png" alt="">
+                    <p>Đăng nhập bằng tài khoản <br> Đại học Bách Khoa Hà Nội</p>
+                </div>
+                <div class="login-fail d-n transition2" style="color: red;">
+                    Email hoặc password không đúng! <br> Vui lòng thử lại!
+                </div>
+                <div class="form-row flex w-full">
+                    <div class="input-text w-1/4"> Email </div>
+                    <div class="input-init w-2/3" style="position: relative;">
+                        <input type="text" id="emailLogin" maxlength="50" placeholder="Nhập email" onchange="afterValidEmail('#emailLogin')">
+                        <p class="invalid d-n">Email không đúng định dạng</p>
+                    </div>
+                </div>
+                <div class="form-row flex w-full">
+                    <div class="input-text w-1/4"> Password </div>
+                    <div class="input-init w-2/3">
+                        <input type="password" maxlength="20" value="" id="passwordLogin" placeholder="Nhập mật khẩu">
+                    </div>
+                </div>
+<!--                <div class="form-row flex w-full role">-->
+<!--                    <div class="w-1/2">-->
+<!--                        <input type="radio" name="role" id="1" value="TEACHER"> <span>Là Giảng viên</span>-->
+<!--                    </div>-->
+<!--                    <div class="w-1/2">-->
+<!--                        <input type="radio" name="role" id="2" value="STUDENT"> <span>Là Sinh viên</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div style="margin: 50px 0 30px;">
+                    <button class="btn-login pointer" id="login">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/student/js/baseAPI.js"></script>
+<script src="/student/js/login.js"></script>
+
+</html>

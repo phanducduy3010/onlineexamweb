@@ -1,0 +1,31 @@
+.body .content .main-content .instruction .instruction-init,
+.body .content .main-content .instruction .instruction-init span {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.body .content .main-content .instruction .instruction-init img {
+    width: 19px;
+    height: 19px;
+}
+
+.body .content .main-content .instruction .list-institute {
+    padding: 20px 0 0 25px;
+}
+
+.body .content .main-content .instruction .list-institute .list-title {
+    font-size: 18px;
+}
+
+.body .content .main-content .instruction .list-institute .institute {
+    margin-top: 15px;
+    cursor: d;
+}
+
+.body .content .main-content .instruction .list-institute .institute a {
+    cursor: default;
+}
+
+.body .content .main-content .instruction .list-institute .institute a:hover {
+    color: #0f6fc9;
+}
